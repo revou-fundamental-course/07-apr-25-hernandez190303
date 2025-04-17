@@ -3,9 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nandez Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+    <header class="sticky-logo">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="assets/NS.jpg" alt="Logo Nandez Shop">
+          </div>
+          
+         <!-- Navigasi bar -->
+         <nav>
+            <a href="#home-section">Home</a>
+            <a href="#visimisi-section">Visi & Misi</a>
+            <a href="#profile-section">Location</a>
+            <a href="#portofolio-section">Portofolio</a>
+            <a href="#message-section">Message Us</a>
+         </nav>
+    </header>
+
+    <hr/>
+
+    <main>
+        <!-- Home section -->
+        <section id="home-section">
+            <header class="header2">
+                <h2>Selamat datang <span id="user-name">Anda</span> di website Nandez Shop!</h2>
+            </header>
+
+            <!-- banner -->
+            <div class="banner"></div>
+
+            <article>
+                <h1>Semua kebutuhan gaming anda ada di <b>Nandez Shop</b></h1>
+                
+                <h3>Mulai dari:</h3>
+                <h3>- Mobile Legends</h3>
+                <h3>- PUBG</h3>
+                <h3>- COD</h3>
+                <h3>- Ragnarok</h3>
+                <h3>- dan Masih Banyak Lagi</h3>
+            </article>
+        </section>
+        <hr/>
+
+        <!-- Visi & Misi section -->
+        <section id="visimisi-section">
+            <header>
+                <h2>Visi & Misi</h2>
+            </header>
+
+            <div class="container-vm">
+                <div class="teks-vm">
+                    <h1>Visi</h1>
+                    <hr/>
+                    <p>Menjadi perusahaan yang dapat memenuhi kebutuhan customer </p>
+                    <p>dengan produk gaming terpercaya, murah </p>
+                    <p>di bidang permainan online </p>
+                    <hr/>
+                    <h1>Misi</h1>
+                    <hr/>
+                    <p>Menjadi perusahaan gaming yang membawa nama baik Indonesia di bidang permainan online</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile section -->
+        <section id="profile-section">
+            <header>
+                <h2>Location Shop</h2>
+            </header>
+
+            <nav>
+                <div class="border1" id="b1">
+                    <h2 id="loc">Jakarta</h2>
+                </div>
+                <div class="border2" id="b1">
+                    <h2 id="loc">Sidoarjo</h2>
+                </div>
+                <div class="border3" id="b1">
+                    <h2 id="loc">Bandung</h2>
+                </div>
+            </nav>
+        </section>
+        <hr/>
+
+        <!-- Portofolio -->
+        <section id="portofolio-section">
+            <header>
+                <h2>Portofolio</h2>
+            </header>
+
+            <div class="container-portofolio">
+                <div class="teks-portofolio">
+                    <h1>Owner Nandez Shop(keinginan)</h1>
+                    <hr/>
+                    <p>Saya adalah owner dari Nandez Shop</p>
+                    <p>Sedang berjalan di dunia pendidikan perguruan tinggi</p>
+                    <p>Berkeinginan menjadi seorang pembisnis dan IT untuk menjalankan bisnis dengan menggunakan sebuah sistem</p>
+                    <p>Setelah lulus mengikuti fundamental Software Engineer, saya ingin mengikuti fundamental digital marketing</p>
+                    <p>Saya berharap tidak ingin menjadi orang yang tidak kompeten</p>
+                </div>
+                
+                <div class="photo-profile1"></div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <!-- Message us -->
+        <section id="message-section">
+            <article class="section-content message-container">
+                <form id="message-form" class="message-form">
+                    <label>
+                        Nama :
+                        <input type="text" id="nama" placeholder="Nama" required />
+                    </label>
+
+                    <label>
+                        Tanggal Lahir :
+                        <input type="date" id="date" required />
+                    </label>
+
+                    <label>
+                        Jenis Kelamin :
+                        <div class="gender-options">
+                            <label><input type="radio" name="gender" value="Laki-Laki" required /> Laki-Laki</label>
+                            <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+                        </div>
+                    </label>
+
+                    <label>
+                        Pesan :
+                        <textarea id="message" placeholder="Pesan" required></textarea>
+                    </label>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div id="message-result" class="message-result">
+                    <p><strong>Nama</strong> : <span id="result-nama">-</span></p>
+                    <p><strong>Tanggal Lahir</strong> : <span id="result-date">-</span></p>
+                    <p><strong>Jenis Kelamin</strong> : <span id="result-gender">-</span></p>
+                    <p><strong>Pesan</strong> : <span id="result-message">-</span></p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <hr/>
+
+    <footer>Hernandez @fundamental-revou-id-07-april-2025</footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
